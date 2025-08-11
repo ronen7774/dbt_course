@@ -4,10 +4,10 @@
 
 {{ config(materialized='table') }}
 
-select  
-player_name, 
-team_id,
-round_pick, 
-season
-from {{source('nba_raw_data','DRAFT_HISTORY')}}
+select 
+    season, 
+    player_name, 
+    team_id, 
+    round_pick
+from {{ source('nba_raw_data', 'DRAFT_HISTORY') }} 
 where round_number = 1
