@@ -26,6 +26,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_course:
     +materialized: table
+    +schema: public
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: table
+      +materialized: view

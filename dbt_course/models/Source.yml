@@ -8,3 +8,4 @@ sources:
     - name: DRAFT_HISTORY
     - name: game
     - name: TEAM
+    - name: LINE_SCORE

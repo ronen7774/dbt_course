@@ -3,8 +3,6 @@
 -- show the team’s win percentage and round pick only 
 -- for their highest first-round draft pick that year (lowest round_pick).
 
-{{ config(materialized='table') }}
-
 
 with highest_pick as (
 
